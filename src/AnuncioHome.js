@@ -1,4 +1,5 @@
 import React from 'react'
+import {Link} from 'react-router-dom'
 
 const AnuncioHome = ({anuncio}) => {
     return (
@@ -7,7 +8,7 @@ const AnuncioHome = ({anuncio}) => {
                 <a href="#"><img className="card-img-top" src={anuncio.foto} alt="Foto"/></a>
                 <div className="card-body">
                     <h4 className="card-title">
-                        <a to={'/anuncios/ver/'}>{anuncio.nome}</a>
+                        <Link to={'/anuncios/ver/'}>{anuncio.nome}</Link>
                     </h4>
                     <h5>{anuncio.preco}</h5>
                     <p className="card-text">{anuncio.descricao}</p>
