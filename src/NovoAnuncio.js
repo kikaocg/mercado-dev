@@ -59,8 +59,8 @@ class NovoAnuncio extends Component {
                             <label htmlFor="categoria">Categoria</label>
                             <select name="categoria" id="categoria" ref={(ref) => this.categoria = ref}>
                                 {
-                                    this.props.categorias.map(cat => <option key={cat.url}
-                                                                             value={cat.url}>{cat.categoria}</option>)
+                                    this.props.categorias.map(
+                                        cat => <option key={cat.url} value={cat.url}>{cat.categoria}</option>)
                                 }
                             </select>
                         </div>
