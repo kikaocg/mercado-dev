@@ -1,5 +1,5 @@
 import React from 'react'
-import logo from './logo.png'
+import logo from '../static/logo.png'
 import {Link} from 'react-router-dom'
 
 //functional stateless component

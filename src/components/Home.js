@@ -1,7 +1,7 @@
 import React, {Component} from 'react';
-import AnuncioHome from './AnuncioHome';
+import Anuncio from './Anuncio';
 import Categoria from './Categoria';
-import base from './base';
+import base from '../base';
 import HeaderHome from "./HeaderHome";
 
 class Home extends Component {
@@ -31,7 +31,7 @@ class Home extends Component {
                         {Object.keys(this.state.anuncios).map(key => {
                             const anuncio = this.state.anuncios[key];
                             return [
-                                <AnuncioHome anuncio={anuncio} key={key}/>
+                                <Anuncio anuncio={anuncio} id={key} key={key}/>
                             ]
                         })}
                     </div>
@@ -40,7 +40,7 @@ class Home extends Component {
                         {this.props.categorias.map((cat,indice) => {
                             return [
                                 <Categoria categoria={cat} key={indice}/>,
-                                ++index%4 === 0 && <div key={"c"+indice} className="w-100"></div>
+                                ++index%4 === 0 && <div key={"c"+indice} className="w-100"/>
                             ]
                         })}
                     </div>

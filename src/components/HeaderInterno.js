@@ -1,6 +1,6 @@
 import React from 'react'
 import {Link} from 'react-router-dom'
-import logo2 from './logo2.png'
+import logo2 from '../static/logo2.png'
 
 const HeaderInterno = (props) => {
     return (

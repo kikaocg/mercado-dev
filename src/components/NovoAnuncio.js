@@ -1,6 +1,6 @@
 import React, {Component} from 'react'
 import HeaderInterno from './HeaderInterno'
-import base, {storage} from './base'
+import base, {storage} from '../base'
 import {Redirect} from 'react-router-dom'
 
 class NovoAnuncio extends Component {

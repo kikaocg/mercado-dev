@@ -1,11 +1,11 @@
 import React from 'react'
 import {Link} from 'react-router-dom'
 
-const AnuncioHome = ({anuncio}) => {
+const Anuncio = ({id, anuncio}) => {
     return (
-        <div className="col-lg-4 col-sm-4 col-md-6 mb-4">
+        <div className="col-lg-4 col-sm-6 col-md-6 mb-4">
             <div className="card h-100">
-                <a href="#"><img className="card-img-top" src={anuncio.foto} alt="Foto"/></a>
+                <Link to={`/categorias/${anuncio.categoria}/${id}`}><img className="card-img-top" src={anuncio.foto} alt="Foto"/></Link>
                 <div className="card-body">
                     <h4 className="card-title">
                         <Link to={'/anuncios/ver/'}>{anuncio.nome}</Link>
@@ -16,6 +16,6 @@ const AnuncioHome = ({anuncio}) => {
             </div>
         </div>
     )
-};
+}
 
-export default AnuncioHome
+export default Anuncio
